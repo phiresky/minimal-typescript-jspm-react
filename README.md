@@ -79,5 +79,6 @@
 	<script src="jspm.config.js"></script>
 	<script>System.import("src/app.tsx")</script>
 	```
+7. run `typings install --save --ambient react` and `... react-dom`
 
 Now run a webserver with `python3 -m http.server` and open <http://localhost:8000>. You should see "Hello World" displayed.
