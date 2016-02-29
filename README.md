@@ -1,3 +1,13 @@
+# minimal-typescript-jspm-react
+
+Minimal project setup for TypeScript + JSPM + SystemJS + React.
+
+## Prerequisites
+
+You will need typescript≥1.8.0, jspm≥0.17-beta and typings≥0.6.8.
+
+## Setup
+
 1. run `jspm init` (baseURL=empty, transpiler=TypeScript, defaults for other stuff)
 2. run `jspm install react react-dom`
 3. add to jspm.config.js:
@@ -81,4 +91,4 @@
 	```
 7. run `typings install --save --ambient react` and `... react-dom`
 
-Now run a webserver with `python3 -m http.server` and open <http://localhost:8000>. You should see "Hello World" displayed.
+Now run a webserver with `python3 -m http.server` and open <http://localhost:8000>. You should see "Hello World" and the time displayed.
