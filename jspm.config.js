@@ -6,6 +6,18 @@ SystemJS.config({
   ],
   transpiler: "plugin-typescript",
 
+  meta: {
+    "*.tsx": {
+      loader: "plugin-typescript"
+    },
+    "*.ts": {
+      loader: "plugin-typescript"
+    }
+  },
+  typescriptOptions: {
+    typeCheck: true,
+    tsconfig: true
+  },
   map: {
     "plugin-typescript": "github:frankwallis/plugin-typescript@4.0.1",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",
